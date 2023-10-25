@@ -5,6 +5,41 @@
 <p>MUD - Engine for Autonomous Worlds</p>
 </div>
 
+---
+
+## zkSync/Foundry Feature Set Additions
+
+- `--skip` flag for `zkforge zkbuild` to skip specified folders from compilation
+
+- `--match-contract` flag for `zkforge zkbuild` to compile only specified contracts
+
+- `-r` flag for `zkforge zkbuild` to remap locally imported contracts
+
+- `local remapping` of contracts in `zkforge zkbuild` pulls all imported contracts from source and writes them to `zk_remapped_local` directory and compiles from there
+
+- created `zk_deploys` directory for storing deployment information
+
+- improved zkout directory structure to prevent artifacts from being overwritten
+
+- efficiencies regarding contract compilation. Uneccessary iterations have been removed, shortening compile time.
+
+## Current Progress:
+
+- `zkforge zkbuild` command is working as expected.
+- `pnpm mud zkdeploy` command created as entry point for World deployment.
+- able to compile deploy and interact with MUD core contracts using command line:
+  `CoreModule.sol`, `CoreSystem.sol`, `WorldFactory.sol`, `World.sol`
+
+## Current issues:
+
+- MUD is in rapid state of development. [The directory structures have changed.](https://www.diffchecker.com/oWpYE4Hb/)
+
+- zkSync/Foundry app needs a slight refactor to accomodate some of the changed behavior from MUD changes.
+
+- existing `pnpm mud zk` command that was compiling and deploying MUD project contracts (except CoreModule.sol, WorldFactory.sol and World.sol)is broken.
+
+- have since created a new command to just handle World deployment, `pnpm mud zkdeploy`. This command is still a WIP
+
 ## Compile `CoreModule.sol`
 
 > Compile with `--is-system` flag
@@ -58,6 +93,8 @@ Output file stored at `src/zk_deploys/CoreModule/latest.json`:
   "gas_used": "232492"
 }
 ```
+
+---
 
 ## Compile `WorldFactory.sol`
 
