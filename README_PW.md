@@ -40,6 +40,12 @@
 
 - have since created a new command to just handle World deployment, `pnpm mud zkdeploy`. This command is still a WIP
 
+---
+
+changes to mud directory structure - https://www.diffchecker.com/oWpYE4Hb/
+
+---
+
 ## Compile `CoreModule.sol`
 
 > Compile with `--is-system` flag
