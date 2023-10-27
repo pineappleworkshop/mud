@@ -36,7 +36,7 @@
 
 - zkSync/Foundry app needs a slight refactor to accomodate some of the changed behavior from MUD changes.
 
-- existing `pnpm mud zk` command that was compiling and deploying MUD project contracts (except CoreModule.sol, WorldFactory.sol and World.sol)is broken.
+- existing `pnpm mud zk` command that was compiling and deploying MUD project contracts (except CoreModule.sol, WorldFactory.sol and World.sol) is broken.
 
 - have since created a new command to just handle World deployment, `pnpm mud zkdeploy`. This command is still a WIP
 
