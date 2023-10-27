@@ -48,7 +48,8 @@ changes to mud directory structure - https://www.diffchecker.com/oWpYE4Hb/
 
 ## Compile `CoreModule.sol`
 
-> Compile with `--is-system` flag
+> Compile with `--is-system` flag.
+
 > Compile with `-r` flag to remap locally imported contracts
 
 ```bash
