@@ -33,3 +33,13 @@ As we reflect on the progress made in integrating zkSync/Foundry features into L
 In conclusion, while the integration of zkSync/Foundry features into the Lattice/MUD project has shown promising progress, the fast-paced development of MUD has posed challenges that we need to address. Our team remains committed to resolving these issues and adapting the zkSync/Foundry codebase to the evolving landscape of MUD.
 
 We appreciate the patience and understanding of our community and contributors as we navigate these challenges. Rest assured, we are excited to continue our work on this project and look forward to resuming development as soon as possible.
+
+---
+
+### Matt's Notes
+
+We lacked a bit of collaboration with both the Lattice team and the ZkSync team. We suggested ongoing meeting with both, Lattice at first was more or less like, "who are you guys". ZkSync opted to have adhoc syncs which I'm not a fan of if there isn't some sort of weekly. One thing in regards to collaboration was the remappings situation. It was mentioned that it was an option, I opted in to collaborated on the effort, all of a sudden it was "done". We then spent a couple hours testing the remapping implementation to confirm it didn't work since the context wasn't address. 
+
+Having no direct communication with any ZkSync developers is pretty tough too. In the past, we've managed but this was literally merged today: https://github.com/matter-labs/foundry-zksync/pull/135. I think some communication could help with a more collaborative effort. I don't think we need much but if people nonresponsive across the board or we can't talk to the right people promptly and directly, it gives the impression that people don't care.
+
+I think the MUD project needs to get to a more stable place to to execute efficiently going forward. I know Sam did some remapping work which is a work around. Maybe we can isolate and collaborate with the other compiler team to do this right, and that may even find itself valuable into the future. 
